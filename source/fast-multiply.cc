@@ -1,3 +1,9 @@
+/**
+ * This code takes two non-negative large integers, and performs fast multiplication. 
+ * A Fast Fourier Transform (Cooley-Tukey Algorithm) was used in this code. 
+ * The limit of input(number of digits) can adjust by changing MAX_N constant.
+*/ 
+
 #include <cstdio>
 #include <cstring>
 #include <cmath>
@@ -11,7 +17,7 @@ using namespace std;
 using cpx = complex <double>;
 using vcpx = vector<cpx>;
 
-constexpr int MAX_N = 1'111'111;
+constexpr int MAX_N = 1 << 20;
 const double PI = acos(-1);
 
 char a_buf[MAX_N], b_buf[MAX_N];
